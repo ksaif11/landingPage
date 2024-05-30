@@ -1,0 +1,193 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #b6c9dd;
+    color: #333;
+  }
+  
+  header {
+    background: #1c1c1c;
+    color: #fff;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #00d1b2;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: #c4b6b6;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #00d1b2;
+  }
+  
+  main {
+    padding: 50px 20px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .section {
+    margin: 60px 0;
+    text-align: center;
+  }
+  .section div h1{
+    color:#9b9191
+  }
+  .section br{
+    height: 2px;
+  }
+  
+  h1, h2 {
+    margin: 20px 0;
+    color: #1c1c1c;
+  }
+  
+  .timer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .time-box {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100px;
+    transition: transform 0.3s;
+  }
+  
+  .time-box:hover {
+    transform: scale(1.1);
+  }
+  
+  .time-box span {
+    font-size: 2em;
+    color: #00d1b2;
+  }
+  
+  .time-box p {
+    margin: 0;
+    font-weight: 700;
+    color: #555;
+  }
+  
+  #schedule {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .toggle-btn {
+    padding: 10px 20px;
+    background: #00d1b2;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s;
+  }
+  
+  .toggle-btn:hover {
+    background: #00b29e;
+  }
+  
+  .schedule-content {
+    display: none;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .schedule-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .schedule-content ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .tablinks {
+    padding: 10px 20px;
+    background: #1c1c1c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  
+  .tablinks:hover {
+    background: #333;
+  }
+  
+  .tabcontent {
+    display: none;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .tabcontent h3 {
+    margin-top: 0;
+    color: #1c1c1c;
+  }
+  
+  @media (max-width: 600px) {
+    .tabs {
+        flex-direction: column;
+    }
+  
+    .time-box {
+        width: 80px;
+        padding: 10px;
+    }
+  }
+  
